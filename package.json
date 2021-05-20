@@ -1,0 +1,30 @@
+{
+  "name": "Engenharia2-trab2",
+  "version": "1.0.0",
+  "description": "Tentativas de testes de http com supertest/jest\r ## Status \r Em construção... 🚧",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GustavoViegas8/Engenharia2-trab2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GustavoViegas8/Engenharia2-trab2/issues"
+  },
+  "homepage": "https://github.com/GustavoViegas8/Engenharia2-trab2#readme",
+  "dependencies": {
+    "@types/jest": "^26.0.23",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.3"
+  }
+}
