@@ -8,3 +8,12 @@ O projeto ja existia, so foi vercionado.
 ```bash
 npm install
 ```
+## Teste
+JEST
+```bash
+npm run test
+```
+INSOMNIA
+```bash
+npm run dev
+```
