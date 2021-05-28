@@ -10,5 +10,5 @@ app.use(express.json())
 app.use(routes)
 
 app.listen(3000, () => {
-  console.log(`Servidor Rodando na Rota: http://localhost:3000`)
+  //console.log(`Servidor Rodando na Rota: http://localhost:3000`)
 })
