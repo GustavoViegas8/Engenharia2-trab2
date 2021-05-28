@@ -5,6 +5,8 @@ const stock = require('./controllers/stock')
 
 routes
     .get('/stock', stock.get)
-
+    .post('/stock', stock.post)
+    .delete('/stock/:id', stock.delete)
+    .put('/stock/:id', stock.put)
 
 module.exports = routes;
