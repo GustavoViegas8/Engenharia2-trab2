@@ -1,10 +1,11 @@
 {
-  "name": "Engenharia2-trab2",
+  "name": "engenharia2-trab2",
   "version": "1.0.0",
-  "description": "Tentativas de testes de http com supertest/jest\r ## Status \r Em construção... 🚧",
+  "description": "Tentativas de testes de http com supertest/jest",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon ./src/server.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
