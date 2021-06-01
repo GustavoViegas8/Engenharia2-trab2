@@ -1,7 +1,7 @@
 # Teste de Software
 Tentativas de testes de rotas supertest/jest
 ## Status 
-Em construção... 🚧
+:white_check_mark: Finalizado! :white_check_mark:
 ## Sobre
 O projeto ja existia, so foi vercionado e adaptado para o trabalho.
 ## Instalação
@@ -10,10 +10,10 @@ npm install
 ```
 ## Teste
 JEST
-```bash
+```
 npm run test
 ```
 INSOMNIA
-```bash
+```
 npm run dev
 ```
