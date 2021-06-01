@@ -1,13 +1,5 @@
-const express = require('express')
-const routes = require('./routes/routes')
-const app = express()
+const routes = require('./routes')
 
-app.get('/', (req, res) => {
-  res.send('Hello World')
-})
-
-app.use(routes)
-
-app.listen(3000, () => {
+routes.listen(3000, () => {
   //console.log(`Servidor Rodando na Rota: http://localhost:3000`)
 })

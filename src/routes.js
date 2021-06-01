@@ -1,22 +1,22 @@
+const express = require("express");
+const routes = express();
+routes.use(express.json())
+
 // "database"
 const stock = [{
     id: 1,
     produto: "Moto G6 Plus",
     preco: 1800
 }];
-//"CRUD methods"
-module.exports = {
-    //Returns products registered in stock
-    async get(req, res){
-        try{
-            res.status(200).json(stock)
-        }catch (error){
-            res.status(400).json({erro: error.message});
-        }
-    },
 
+//"CRUD methods"
+routes
+    //Returns products registered in stock
+    .get('/stock', (req, res) =>{
+        res.status(200).json(stock)
+    })
     //Add an item to the stock
-    async post(req, res){
+    .post('/stock', (req, res) =>{
         const { produto, preco } = req.body;
         if (!produto || !preco){
             res.status(400).json({
@@ -34,10 +34,9 @@ module.exports = {
         }catch(error){
             res.status(400).json({erro: error.message});
         }
-    },
-
+    })
     //Remove an item to the stock
-    async delete(req, res){
+    .delete('/stock/:id', (req, res) => {
         const id = req.params.id
         for (let i = 0; i < stock.length; i++){
             if(id == stock[i].id){
@@ -47,10 +46,9 @@ module.exports = {
             }
         }
         res.status(400).json({msg: "Item não consta no stock"})
-    },
-
+    })
     //Update an item to the stock
-    async put(req, res){
+    .put('/stock/:id', (req, res) => {
         const id = req.params.id;
         const preco = req.body.preco;
         const item = stock.find((i) => i.id == id);
@@ -61,5 +59,6 @@ module.exports = {
         }else{
             res.status(400).json({msg: "Item não consta no stock"})
         }
-    }
-}
+    })
+
+module.exports = routes;
