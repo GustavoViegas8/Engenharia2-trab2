@@ -3,6 +3,8 @@ const routes = express.Router();
 
 const stock = require('./controllers/stock')
 
+routes.use(express.json())
+
 routes
     .get('/stock', stock.get)
     .post('/stock', stock.post)

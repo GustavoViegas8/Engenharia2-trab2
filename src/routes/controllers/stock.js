@@ -1,8 +1,10 @@
+// "database"
 const stock = [{
     id: 1,
     produto: "Moto G6 Plus",
     preco: 1800
 }];
+//"CRUD methods"
 module.exports = {
     //Returns products registered in stock
     async get(req, res){
@@ -28,7 +30,7 @@ module.exports = {
                 produto: produto,
                 preco: preco
             })
-            res.status(200).json({msg: "Produto Adiciona ao Stock"})
+            res.status(200).json({msg: "Produto Adicionado ao Stock"})
         }catch(error){
             res.status(400).json({erro: error.message});
         }
