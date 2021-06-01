@@ -3,7 +3,7 @@ Tentativas de testes de rotas supertest/jest
 ## Status 
 Em construção... 🚧
 ## Sobre
-O projeto ja existia, so foi vercionado.
+O projeto ja existia, so foi vercionado e adaptado para o trabalho.
 ## Instalação
 ```bash
 npm install
